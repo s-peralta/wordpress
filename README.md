@@ -8,13 +8,13 @@ Syntax / Snippets / Best Design Patterns
 
 ----------------------------------------------------------------------------------------------------------------
 
-CSS LINK
+// CSS LINK
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css" type="text/css" media="screen" />
 
 ----------------------------------------------------------------------------------------------------------------
 
-JS LINK
+// JS LINK
 
 <script src="<?php bloginfo('template_url'); ?>/js/vendor/hover.intent.js" type="text/javascript" charset="utf-8"></script>
 
