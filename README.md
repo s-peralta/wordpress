@@ -154,3 +154,85 @@ INCLUDE TO POSTTYPE.PHP
 ```
 require_once ( get_template_directory() . '/functions/post-types.php' );
 ```
+
+CUSTOM POST TYPE
+--------
+```
+add_action( 'init', 'register_cpt_news' );
+function register_cpt_news() {
+	$post_type = 'news';
+    $labels = array(
+	    'name' => _x( 'News' ,$post_type ),
+	    'singular_name' => _x( 'News' ,$post_type ),
+	    'new_item' => _x( 'Add News' ,$post_type ),
+	    'edit_item' => _x(  'Edit News' ,$post_type ),
+	    'menu_name' => _x('News' ,$post_type ),
+    );
+    $args = array(
+        'labels' => $labels,
+        'hierarchical' => true,
+        'description' => '',
+        'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail'),
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus' => true,
+        'publicly_queryable' => true,
+        'exclude_from_search' => false,
+        'has_archive' => false,
+        'query_var' => true,
+        'can_export' => true,
+        'rewrite' => array('slug' => 'news', 'with_front' => false),
+        'menu_icon' => 'dashicons-admin-page',
+        'capability_type' => 'post'
+    );
+    register_post_type( $post_type, $args );
+} 
+```
+
+SHORTCODE GRIGS
+--------
+```
+function row( $atts, $content = null ) {
+	return '<div class="content_block">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('row', 'row');
+
+function column_3( $atts, $content = null ) {
+	return '<div class="grid_3">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('column_3', 'column_3');
+
+function column_4( $atts, $content = null ) {
+	return '<div class="grid_4">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('column_4', 'column_4');
+
+function column_5( $atts, $content = null ) {		
+	return '<div class="grid_5">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('column_5', 'column_5');
+
+function column_6( $atts, $content = null ) {
+   return '<div class="grid_6">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('column_6', 'column_6');
+
+function column_7( $atts, $content = null ) {
+   return '<div class="grid_7">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('column_7', 'column_7');
+
+function column_8( $atts, $content = null ) {
+   return '<div class="grid_8">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('column_8', 'column_8');
+
+function column_12( $atts, $content = null ) {	
+	return '<div class="grid_12">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('column_12', 'column_12');
+
+--------
+
+
