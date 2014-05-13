@@ -138,7 +138,7 @@ The Search Form Template
 // Permalink
 
 
-NAME OF TEMPLATES
+Naming of Template
 --------
 ```
 <?php
@@ -149,13 +149,8 @@ Template Name: One Column
 ?>
 ```
 
-INCLUDE TO POSTTYPE.PHP
---------
-```
-require_once ( get_template_directory() . '/functions/post-types.php' );
-```
 
-CUSTOM POST TYPE
+Create Custom Post Type
 --------
 ```
 add_action( 'init', 'register_cpt_news' );
@@ -190,7 +185,7 @@ function register_cpt_news() {
 } 
 ```
 
-SHORTCODE GRIGS
+ShortCode Grids - Foundation CSS Grid System
 --------
 ```
 function row( $atts, $content = null ) {
