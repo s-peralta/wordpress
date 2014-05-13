@@ -194,37 +194,37 @@ function row( $atts, $content = null ) {
 add_shortcode('row', 'row');
 
 function column_3( $atts, $content = null ) {
-	return '<div class="grid_3">' . do_shortcode($content) . '</div>';
+	return '<div class="large-3">' . do_shortcode($content) . '</div>';
 }
 add_shortcode('column_3', 'column_3');
 
 function column_4( $atts, $content = null ) {
-	return '<div class="grid_4">' . do_shortcode($content) . '</div>';
+	return '<div class="large-4">' . do_shortcode($content) . '</div>';
 }
 add_shortcode('column_4', 'column_4');
 
 function column_5( $atts, $content = null ) {		
-	return '<div class="grid_5">' . do_shortcode($content) . '</div>';
+	return '<div class="large-5">' . do_shortcode($content) . '</div>';
 }
 add_shortcode('column_5', 'column_5');
 
 function column_6( $atts, $content = null ) {
-   return '<div class="grid_6">' . do_shortcode($content) . '</div>';
+   return '<div class="large-6">' . do_shortcode($content) . '</div>';
 }
 add_shortcode('column_6', 'column_6');
 
 function column_7( $atts, $content = null ) {
-   return '<div class="grid_7">' . do_shortcode($content) . '</div>';
+   return '<div class="large-7">' . do_shortcode($content) . '</div>';
 }
 add_shortcode('column_7', 'column_7');
 
 function column_8( $atts, $content = null ) {
-   return '<div class="grid_8">' . do_shortcode($content) . '</div>';
+   return '<div class="large-8">' . do_shortcode($content) . '</div>';
 }
 add_shortcode('column_8', 'column_8');
 
 function column_12( $atts, $content = null ) {	
-	return '<div class="grid_12">' . do_shortcode($content) . '</div>';
+	return '<div class="large-12">' . do_shortcode($content) . '</div>';
 }
 add_shortcode('column_12', 'column_12');
 
