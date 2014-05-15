@@ -1,4 +1,4 @@
-Beginners Guide to WOrdpress
+Beginners Guide to Wordpress
 =============================
 
 Syntax / Snippets / Best Design Patterns
