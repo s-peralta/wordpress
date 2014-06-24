@@ -47,6 +47,16 @@ Date
 --------
 ```
 <?php the_date(); ?>
+
+Or
+
+<php the_time(); ?>
+
+l = Full name for day of the week (lower-case L).
+F = Full name for the month.
+j = The day of the month.
+Y = The year in 4 digits. (lower-case y gives the year's last 2 digits)
+
 ```
 
 Content
